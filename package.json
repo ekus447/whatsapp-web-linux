@@ -1,0 +1,32 @@
+{
+  "name": "whatsapp-web-linux",
+  "version": "1.0.2",
+  "description": "Whatsapp Web for Linux by eKush",
+  "main": "main.js",
+  "homepage": "https://ekush.glitch.me",
+  "author": "eKush <eKush447@gmail.com>",
+  "license": "MIT",
+
+  "build": {
+    "appId": "net.ekush.whatsapp-web",
+    "productName": "Whatsapp Web",
+    "copyright": "Copyright © eKush",
+    "linux": {
+      "category": "Network",
+      "icon": "build/icon.icns",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  },
+  "scripts": {
+    "dev": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "electron-builder": "^22.11.7"
+  }
+}
